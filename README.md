@@ -1,4 +1,4 @@
-# Person Name Classification | Tensorflow/Keras | LSTM & CNN
+# Person Name Classification | Keras | RNNs & CNN
 
 Work in progress.
 
