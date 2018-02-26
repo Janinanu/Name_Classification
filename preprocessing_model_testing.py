@@ -136,6 +136,7 @@ max_len = get_max_len()
 
 #%% 
 def name_to_array(name, max_len):
+    name = name.lower()
     one_hot_name = to_categorical([alphabet.find(letter) for letter in name], num_classes=len(alphabet))
     num_pads = max_len-len(name)
     one_hot_name_padded = np.vstack((one_hot_name, np.zeros((num_pads,len(alphabet)))))
